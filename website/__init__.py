@@ -17,7 +17,7 @@ def create_app():
     # app.config['SQLALCHEMY_DATABASE_URI'] = f'sqlite:///{DB_NAME}'
  #Postgres
     # app.config['SQLALCHEMY_DATABASE_URI']=f'postgresql://postgres:{PASSWORD}@localhost/{DB_POSTGRES}'
-    app.config['SQLALCHEMY_DATABASE_URI']=f'postgres://uvwafhkypqrwdr:976972ce00aeba9047cf9c53a13bca57ca465fbfa219ccc5ffbae8a3b58aa950@ec2-23-23-151-191.compute-1.amazonaws.com:5432/ddai8i1hrh524k'
+    app.config['SQLALCHEMY_DATABASE_URI']=f'postgres://zhbeqexqekyftr:fb705736c678a17307535e5eed0a9fada0b1110ad19b91859cf56776bf0347fa@ec2-44-206-11-200.compute-1.amazonaws.com:5432/d4nutqgtf46pno'
     db.init_app(app)
 
 
