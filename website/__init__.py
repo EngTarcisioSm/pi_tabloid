@@ -14,7 +14,7 @@ def create_app():
     app = Flask(__name__)
  #Sqlite configuração
     app.config['SECRET_KEY'] = 'grhteyeuwhhs fgdhjajakuww'
-    app.config['SQLALCHEMY_DATABASE_URI'] = f'sqlite:///{DB_NAME}'
+    # app.config['SQLALCHEMY_DATABASE_URI'] = f'sqlite:///{DB_NAME}'
  #Postgres
     app.config['SQLALCHEMY_DATABASE_URI']=f'postgresql://postgres:{PASSWORD}@localhost/{DB_POSTGRES}'
     db.init_app(app)
