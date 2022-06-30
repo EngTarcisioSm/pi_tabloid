@@ -13,10 +13,9 @@ PASSWORD = 'jsbach'
 def create_app():
     app = Flask(__name__)
  #Sqlite configuração
-    app.config['SECRET_KEY'] = 'grhteyeuwhhs fgdhjajakuww'
+    # app.config['SECRET_KEY'] = 'grhteyeuwhhs fgdhjajakuww'
     # app.config['SQLALCHEMY_DATABASE_URI'] = f'sqlite:///{DB_NAME}'
  #Postgres
-    # app.config['SQLALCHEMY_DATABASE_URI']=f'postgresql://postgres:{PASSWORD}@localhost/{DB_POSTGRES}'
     app.config['SQLALCHEMY_DATABASE_URI']=f'postgres://qoivmbvfdtvbuo:829fd00599326ce4fe592836ea5f5960502531502fd88adcf26ac4731b48391c@ec2-3-224-8-189.compute-1.amazonaws.com:5432/d1fjk08aa9ep5m'
     db.init_app(app)
 
